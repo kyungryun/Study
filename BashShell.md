@@ -10,8 +10,6 @@ Ctrl + r : history 검색
 
 ### 파일 시스템 관련 명령어
 
-### 파일 관련 명령어
-
 ```bash
 cd (Change Directory)
 	: 현재 작업 디렉토리를 지정한 위치로 변경
@@ -48,6 +46,9 @@ stat
 stat [파일명]
 
 ```
+
+### 파일 관련 명령어
+
 
 ```bash
 touch
