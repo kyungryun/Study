@@ -131,3 +131,75 @@ nohup
 kill
 	: 지정한 프로세스에 시그널을 보내 프로세스 종료
 ```
+
+### 네트워크 관련 명령어
+
+```bash
+ifconfig
+	: 네트워크 인터페이스의 활성/비활성화 및 설정
+
+ip
+	: ip 조회 및 설정
+ip address show
+
+netstat
+	: 네트워크 프로토콜의 통계와 연결상태를 출력
+옵션
+n : 정해진 포트명의 포트 숫자로 출력
+l : listen 상태인 포트만 출력
+t : tcp 통신
+p : program 이름
+u : udp 통신
+네트워크의 상태 전체를 보는 명령어
+-tan(u)
+
+ss
+	: 네트워크 소켓의 통계와 연결상태를 출력
+
+iptables
+	: 방화벽구성이나 NAT구성에 사용
+-nL : 방화벽 리스트 확인
+
+ufw
+	: iptables의 제어를 쉽게 하기 위한 도구
+
+ping
+	: ICMP 프로토콜의 응답 확인 도구
+-c 몇번 핑을 보낼지 설정 옵션
+
+wget
+	: 웹서버로부터 컨텐츠를 가져오는 도구
+
+curl
+	: 다양한 프로토콜을 사용하여 데이터를 전송하게 해 주는 도구
+-L redirect 링크를 따라가는 옵션
+-k https 인증 무시
+-s slient 모드로 실행 / 통계 출력 x
+-o output 파일 지정
+
+route
+	: 네트워크의 경로 정보의 출력, 변경하는 도구
+```
+
+### 검색/탐색 관련 명령어
+
+```bash
+find
+	: 지정한 파일명 또는 정규표현식을 이용하여 파일을 검색
+find 패스 -name 파일명(정규식)
+ex) find ./ -name testfile.txt
+expr) name, type [f/d], perm, e
+
+which
+	: 환경변수 PATH에 등록된 디렉토리에 있는 명령어를 찾아주는 도구
+which ls
+
+grep
+	: 텍스트 검색 기능을 가진 도구
+grep 옵션 "찾을문자열" 파일명
+-i : 대소문자 구분 안함
+-r : 하위 디렉토리까지 포함
+
+history
+
+```
